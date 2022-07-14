@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #ee4d2d;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --text-color: #333;
+    --shadow-color: rgba(75,75,75, .3);
+    --outline-color:rgba(75, 75, 75, 0.678);
+    --overlay-hover-color: #f7f7f7;
+
+}
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.l-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+.l-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.l-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.l-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.btn {
+    border-radius: 2px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    width: 120px;
+    height: 42px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #fe6433; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); 
+
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes  zoomIn {
+    from {
+        transform: scale(0);
+
+    }
+    to {
+        transform: scale(100%)
+    }
+}
+@keyframes fallUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1px);
+    }
+}
